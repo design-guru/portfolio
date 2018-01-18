@@ -1,0 +1,24 @@
+.content {
+  background-image: url("../assets/concrete.png");
+}
+
+.footer {
+  color:white;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.nav-link {
+  padding: 1px;
+}
+
+.break-line {
+  border: 1px solid black;
+  margin-right: 65px;
+}
+
+.project {
+  width:auto;
+  height: 180px;
+}
+
