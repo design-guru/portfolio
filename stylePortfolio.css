@@ -1,15 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .content {
-  background-image: url("./assets/concrete.png");
+  background-image: url("./assets/background.jpg");
+  background-size: cover;
 }
 
 .footer {
   color:white;
-  font-size: 20px;
-  padding-top: 10px;
+  font-size: 1.2rem;
+  padding-top: 1.3rem;
 }
 
-.nav-link {
-  padding: 1px;
+.icon {
+  height: 3vw;
+  width: 3vw;
 }
 
 .break-line {
@@ -17,8 +24,178 @@
   margin-right: 65px;
 }
 
-.project {
-  width:auto;
-  height: 180px;
+.title-line {
+  color: white;
+  font-size: 2.6rem;
 }
 
+.sub-line {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+td {
+  color: lightblue;
+  font-size: 1.3rem;
+}
+
+.top-box {
+  margin-left: 2vw;
+  margin-right: 2vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  background: rgba(0, 0, 0, 0.589);
+}
+
+.none {
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.project-1 {
+  background: url(assets/frame1.jpg);
+  background-size: cover;
+  height: 10rem;
+  margin-bottom: 8vh;
+  border: 1px solid lightblue;
+}
+
+.project-2 {
+  background: url(assets/image2.jpg);
+  background-size: cover;
+  height: 10rem;
+  margin-bottom: 8vh;
+  border: 1px solid lightblue;
+}
+
+.project-3 {
+  background: url(assets/image3.jpg);
+  background-size: cover;
+  height: 10rem;
+  margin-bottom: 8vh;
+  border: 1px solid lightblue;
+}
+
+.project-4 {
+  background: url(assets/image4.jpg);
+  background-size: cover;
+  height: 10rem;
+  margin-bottom: 8vh;
+  border: 1px solid lightblue;
+}
+
+.project-5 {
+  background: url(assets/image6.jpg);
+  background-size: cover;
+  height: 10rem;
+  margin-bottom: 8vh;
+  border: 1px solid lightblue;
+}
+
+.project-6 {
+  background: url(assets/image9.jpg);
+  background-size: cover;
+  height: 10rem;
+  margin-bottom: 8vh;
+  border: 1px solid lightblue;
+}
+
+.project-7 {
+  background: url(assets/image8.jpg);
+  background-size: cover;
+  height: 10rem;
+  margin-bottom: 8vh;
+  border: 1px solid lightblue;
+}
+
+.project-8 {
+  background: url(assets/image5.jpg);
+  background-size: cover;
+  height: 10rem;
+  margin-bottom: 8vh;
+  border: 1px solid lightblue;
+}
+
+.project-9 {
+  background: url(assets/image10.jpg);
+  background-size: cover;
+  height: 10rem;
+  margin-bottom: 8vh;
+  border: 1px solid lightblue;
+}
+
+.info-pane {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.589);
+  color: white;
+}
+
+.card-title {
+  padding-left: 1vw;
+  width: 100%;
+  font-size: 1.2rem;
+  color: blue;
+  background: linear-gradient(to right, rgba(135,224,253,1) 0%,rgba(83,203,241,0.6) 40%,rgba(5,171,224,0) 100%);
+}
+
+.btn {
+  margin-left: 10%;
+  margin-top: 2%;
+}
+
+.darken {
+  background: rgba(0, 0, 0, 0.589);
+
+}
+
+.push {
+  margin-left: 7vw;
+}
+
+@keyframes slide {
+  0%  { bottom: 0; box-shadow: 0 0 5px rgba(0,0,0,0.5);}
+  100%{ bottom: 50px; box-shadow: 0 50px 50px rgba(0,0,0,0.1);}
+}
+
+.falling { animation: slide 0.5s cubic-bezier(0.1,0.25,0.1,1) 0s infinite alternate both;}
+
+.zoom {
+  transition: transform .2s; 
+}
+
+.zoom:hover {
+  transform: scale(1.05);
+}
+
+@media only screen and (max-width: 600px) {
+  td {
+    font-size: 0.8rem;
+  }
+
+  .footer {
+    padding-top: 0.8rem;
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+  .nav {
+    position: fixed;
+  }
+
+  .icon {
+    margin: -0.5rem;
+    padding: 0;
+    height: 7vw;
+    width: 7vw;
+  }
+
+  .project-1, 
+  .project-2, 
+  .project-3, 
+  .project-4, 
+  .project-5, 
+  .project-6 {
+    margin-right: 1vw;
+  }
+}
