@@ -267,7 +267,7 @@ body {
   top: 35px;
   left: 15px;
   height: 40px;
-  width: 380px;
+  width: 20vw;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
   font-weight: 500;
@@ -282,10 +282,16 @@ body {
   bottom: 10px;
   left: 40px;
   height: 40px;
-  width: 350px;
+  width: 15vw;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
   font-weight: 300;
   text-align: center;
   padding-top: 5px;
+}
+
+@media (max-width: 1600px) {
+  .text-block, .tech-block {
+    font-size: 0.9rem;
+  }
 }
