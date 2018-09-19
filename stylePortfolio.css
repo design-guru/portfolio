@@ -46,7 +46,7 @@ td {
 }
 
 .top-box {
-  height: 240px;
+  height: 180px;
   margin-left: 2vw;
   margin-right: 2vw;
   padding-left: 1vw;
@@ -222,13 +222,14 @@ body {
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
   padding: 0 4px;
+  margin-bottom: 2vh;
 }
 
 /* Create four equal columns that sits next to each other */
 .column {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-  max-width: 25%;
+  -ms-flex: 33%; /* IE10 */
+  flex: 33%;
+  max-width: 33%;
   padding: 0 4px;
 }
 
@@ -263,13 +264,13 @@ body {
 
 /* Bottom right text */
 .text-block {
-  position: absolute;
-  top: 35px;
-  left: 15px;
-  height: 40px;
-  width: 20vw;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
+  height: 4vh;
+  width: auto;
+  background-color: rgba(42, 45, 255, 0.8);
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  color: black;
   font-weight: 500;
   font-size: 1.2rem;
   text-align: left;
@@ -278,9 +279,6 @@ body {
 }
 
 .tech-block {
-  position: absolute;
-  bottom: 10px;
-  left: 40px;
   height: 40px;
   width: 15vw;
   background-color: rgba(0, 0, 0, 0.8);
@@ -290,8 +288,81 @@ body {
   padding-top: 5px;
 }
 
+.tech-line {
+  color: white;
+  font-size: 1rem;
+  float: right;
+  margin-right: 5px;
+}
+
 @media (max-width: 1600px) {
   .text-block, .tech-block {
     font-size: 0.9rem;
   }
 }
+
+.project-row {
+  height: 50px;
+}
+.p1 {
+  float: left;
+  height: 100px;
+  background-color: red;
+}
+
+.p2 {
+  float: left;
+  height: 100px;
+  background-color: blue;
+}
+
+.p3 {
+  float: left;
+  height: 100px;
+  background-color: orange;
+}
+
+.p4 {
+  float: left;
+  height: 100px;
+  background-color: green;
+}
+
+.p5 {
+  float: left;
+  height: 100px;
+  background-color: yellow;
+}
+
+.p6 {
+  float: left;
+  height: 100px;
+  background-color: purple;
+}
+
+.rise {
+  height: 40px;
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+ 
+}
+
+.rise:hover {
+  transition: 1s;
+  transform: scaleY(2);
+  transform-origin: bottom;
+  background: darkgrey;
+}
+
+/* @keyframes slider {
+  from{ top: 0px}
+  to{ top: 10px}
+} */
+
+/* @keyframes jump {
+0% { top: 0px }
+50% { top: -100px }
+100% { top: 0px }
+, jump 1s forwards ease-out
+} */
